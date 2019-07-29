@@ -26,6 +26,8 @@ jvm.asyncOptions = {
 }
 jvm.options.push('-Xrs') // fixing the signal handling issues (for exmaple ctrl-c)
 jvm.options.push('-Dcom.ibm.as400.access.AS400.guiAvailable=false') // Removes gui prompts
+jvm.options.push('-Xms2048m')
+jvm.options.push('-Xmx14000m')
 
 jvm.classpath.push(__dirname + '/../../java/lib/jt400.jar')
 jvm.classpath.push(__dirname + '/../../java/lib/jt400wrap.jar')
